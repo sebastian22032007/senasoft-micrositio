@@ -1,0 +1,107 @@
+:root {
+  --azul-senasoft: #1b4f72;
+  --azul-claro: #2e86c1;
+  --fondo: #f4f6f7;
+  --texto: #1c2833;
+  --borde: #d5dbdb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--azul-senasoft);
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.2rem;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--azul-claro);
+}
+
+main {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--azul-claro);
+  border-color: var(--azul-claro);
+}
+
+button {
+  background: var(--azul-senasoft);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--azul-claro);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--borde);
+}
+
+th {
+  background: var(--azul-senasoft);
+  color: white;
+}
+
+tr:hover td {
+  background: #eef2f3;
+}
